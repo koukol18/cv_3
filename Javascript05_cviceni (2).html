@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript 05 - Document Object Model (DOM)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+
+<body>
+  <i class="fa fa-money" aria-hidden="true"></i>
+
+  <div class="container pt-3">
+    <section class="mb-3">
+      <h1 class="mb-3">Javascript 05 - Document Object Model (DOM) - cvičení</h1>
+      <p class="alert alert-primary">
+        Vítejte ve cvičení k Document Object Modelu, v tomto cvičení v konzoli nic nenajdete...
+        Všechno potřebné bude v HTML.<br>POZOR! - HTML však nemůžete nijak měnit, všechny úkoly musí být splněny
+        pomocí Javascriptu.
+      </p>
+    </section>
+    <section class="mb-3">
+      <h2>On-line peněženka</h2>
+      <p>
+        Na stránce máte svojí novou online peněženku, aktualizujte její zůstatek pomocí Javascriptu.
+        Částka je na vás.
+      </p>
+      <div class="border p-3 bg-light">
+        <span id="penezenka" class="penezenka h5 text-success">
+          Ve vaší e-penežence je 50 Kč
+        </span>
+      </div>
+
+    </section>
+    <section class="mb-3">
+      <h2>Zájemci o studium</h2>
+      <p>
+        Máte před seznam zájemců o studium na speciální obor, který přijímá pouze 5 prvních studentů,
+        označte všechny úspěšně zájemce zeleným pozadím a všechny neúspěšné červeným pozadím.
+        Použijte javascript!
+      </p>
+      <ol class="zajemci list-group">
+        <li class="list-group-item">Libor Katapult</li>
+        <li class="list-group-item">Čeněk Brzda</li>
+        <li class="list-group-item">Bibliotéka Nováková</li>
+        <li class="list-group-item">Rozárie Tichá</li>
+        <li class="list-group-item">Fernando Gonzáles</li>
+        <li class="list-group-item">Trixie Bournová</li>
+        <li class="list-group-item">Leopold Bourák</li>
+      </ol>
+    </section>
+
+    <section class="mb-3">
+      <h2>Ztracené obrázky</h2>
+      <p>
+        Jejda, někdo nám vypnul server, ze kterého jsme získávali obrázky na náš web,
+        všude se to ještě neprojevilo, a je potřeba udělat rychle opatření, aby se
+        nám nerozbili stránky.
+      </p>
+      <p>
+        Nahraďte pomocí javascriptu, všechny obrázky níže tímto zdrojem:
+        https://media.giphy.com/media/lgcUUCXgC8mEo/giphy.gif
+
+      </p>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://picsum.photos/id/237/400/300" alt="Obrázek1" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+          <img src="https://picsum.photos/id/238/400/300" alt="Obrázek2" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+          <img src="https://picsum.photos/id/239/400/300" alt="Obrázek3" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+          <img src="https://picsum.photos/id/236/400/300" alt="Obrázek4" class="img-fluid">
+        </div>
+      </div>
+
+    </section>
+    <section class="mb-3">
+      <h2>Nová recenza</h2>
+      <p>
+        Sice víte, že se to nedělá, ale business je business, u produktu zobrazujete 4 recenze,
+        málokdo však ví, že reálné jsou pouze 3 recenze, a tak čvtrtá se přidává nakonec pomocí
+        javascriptu.
+      </p>
+      <p>
+        Aby to však nebylo tak okaté, máme k dispozici 3 různé možnosti, které se mění pokaždé
+        když načtete znovu stránku.
+      </p>
+      <h3 class="h6">Fake recenze</h3>
+      <ul>
+        <li>Fakt skvělý výrobek, vůbec si nedokážu představit, že jsem mohl žít bez něj!</li>
+        <li>Lidi kupujte než to zavřou, jeden koupila jsem jeden pro manžela druhý pro syna, nevěřili byste,
+          jakou měli radost...</li>
+        <li>Když mi o něm řekla kamarádka, myslela jsem si, že si dělá srandu, teď ho však používám už třetí
+          týden a nemůžu si ho vynachválit!</li>
+      </ul>
+      <div class="recenze border p-3 bg-light">
+        <div class="media mb-2">
+          <img src="https://api.adorable.io/avatars/64/RobertD.png" class="mr-3" alt="Avatar">
+          <div class="media-body">
+            <p>
+              Skvělý pomocník v domácnosti, využívám na přípravu zdravé stravy - smoothie, polévky, fresh.
+              Zkoušela jsem i ledovou kávu. Je opravdu výkonný, konečně přístroj, co zvládá kupu věcí a
+              nezabírá zbytečně moc místa. Navíc dobře vypadá. Chválím
+            </p>
+          </div>
+        </div>
+        <div class="media mb-2">
+          <img src="https://api.adorable.io/avatars/64/Alfonso.png" class="mr-3" alt="Avatar">
+          <div class="media-body">
+            <p>
+              Líbí se mi volba z už nastavených programů, myslí za mě :). Výkon je bombastický a má silné
+              nože, které vypadají opravdu kvalitně. Nemusím mít perfektně čisté ruce by dotykový
+              sliderový displej fungoval - coož je při vaření velké + !
+            </p>
+          </div>
+        </div>
+        <div class="media mb-2">
+          <img src="https://api.adorable.io/avatars/64/Karol.png" class="mr-3" alt="Avatar">
+          <div class="media-body">
+            <p>
+              Super funkce, stačí stisknout. Dotykové ovládání funguje na výbornou i se "zapatlanejma"
+              rukama :) Celkově mixuje rychle a důkladně. Vyzkoušeli jsme smoohtie, ledovou kávu (denně) a
+              polévku.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-3">
+      <h2>Hrátky se styly</h2>
+      <p>
+        No a na závěr jsi pojďme trochu pohrát se stylováním pomocí javascriptu...
+      </p>
+      <h3 class="h6">Splňte tyto úkoly</h3>
+      <ul>
+        <li>Změňte barvu pozadí celého dokumentu.</li>
+        <li>Všechny nadpisy budou mít jiný (zábavnější font).</li>
+        <li>U puntíkovaných seznamů změňte puntíky na čtverečky.</li>
+        <li>Každý druhý odstavec bude psán kurzívou.</li>
+        <li>Přidejte nakonec dokumentu libovolný / oblíbený citát o životě.</li>
+      </ul>
+    </section>
+  </div>
+  <script src="cviceni5.js"></script>
+</body>
+
+</html>
